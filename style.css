@@ -1,0 +1,149 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+h1, h2, h3, h4 {
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+
+article {
+    background: #fff;
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+p {
+    text-align: justify;
+}
+
+
+figure {
+    margin: 1em 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+figcaption {
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center center center;
+    padding: 1em 0;
+    position: relative;
+    align-items: center center center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    align-items: center;
+    text-align: center;
+}
+
+
+.hobbies, .favorites, .friends {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.hobbies section, .favorites section, .friends section {
+    flex: 1 1 calc(33.333% - 2em);
+    margin: 1em;
+    background: #f9f9f9;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 768px) {
+    .hobbies section, .favorites section, .friends section {
+        flex: 1 1 100%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+}
